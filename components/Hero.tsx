@@ -31,7 +31,7 @@ export default function Hero() {
 
           {/* Subtext */}
           <p className="text-lg md:text-xl text-rg-bone font-light leading-relaxed max-w-2xl mx-auto">
-            For The Play Runners. Built for hustlers with intent. Strategic. Disciplined. Forward.
+            Built For Motion.<br />Designed For Those Who Move With Intent.
           </p>
 
           {/* CTA Buttons */}

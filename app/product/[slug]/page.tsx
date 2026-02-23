@@ -80,7 +80,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                   Premium minimal piece from the Runner Gang Lifestyle collection. Designed with attention to detail and crafted from the finest materials.
                 </p>
                 <p>
-                  Inspired by Fear of God's design discipline, this item exemplifies our philosophy of intentional design and timeless style.
+                  Built for daily movement and intentional design. This item exemplifies our philosophy of strategic minimalism and timeless style.
                 </p>
               </div>
 
@@ -89,6 +89,45 @@ export default function ProductPage({ params }: ProductPageProps) {
                 <button className="w-full btn-primary">
                   Add to Cart
                 </button>
+              </div>
+
+              {/* Product Details */}
+              <div className="border-t border-white/10 pt-8 space-y-6">
+                <div>
+                  <h3 className="font-medium text-rg-bone mb-4">PRODUCT DETAILS</h3>
+                  
+                  <div className="space-y-4 text-sm text-rg-bone/80">
+                    <div>
+                      <p className="font-medium text-rg-bone mb-2">Fit</p>
+                      <p className="text-rg-bone/80">Modern athletic structured fit. True to size.</p>
+                    </div>
+
+                    <div>
+                      <p className="font-medium text-rg-bone mb-2">Fabric</p>
+                      {product.name.includes('Tee') ? (
+                        <p className="text-rg-bone/80">
+                          <span className="text-rg-bone font-medium">220 GSM premium cotton (tee)</span><br />
+                          380+ GSM heavyweight cotton blend (hoodie)
+                        </p>
+                      ) : (
+                        <p className="text-rg-bone/80">
+                          220 GSM premium cotton (tee)<br />
+                          <span className="text-rg-bone font-medium">380+ GSM heavyweight cotton blend (hoodie)</span>
+                        </p>
+                      )}
+                    </div>
+
+                    <div>
+                      <p className="font-medium text-rg-bone mb-2">Design</p>
+                      <p className="text-rg-bone/80">Bold brush "Runner Gang" logo.<br />Front or back placement depending on piece.</p>
+                    </div>
+
+                    <div>
+                      <p className="font-medium text-rg-bone mb-2">Purpose</p>
+                      <p className="text-rg-bone/80">Built for daily movement. Built to last.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Product Info */}

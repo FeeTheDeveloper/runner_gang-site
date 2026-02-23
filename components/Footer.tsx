@@ -12,11 +12,23 @@ export default function Footer() {
             Runner Gang Lifestyle © {currentYear}
           </p>
 
-          {/* Contact & Social Links */}
-          <div className="flex flex-wrap justify-center gap-8">
+          {/* Links */}
+          <div className="flex flex-wrap justify-center gap-6 text-sm">
             <a
-              href="mailto:contact@runnergangls.com"
-              className="text-sm text-rg-bone/70 hover:text-rg-bone transition-colors duration-200"
+              href="/shop"
+              className="text-rg-bone/70 hover:text-rg-bone transition-colors duration-200"
+            >
+              Shop
+            </a>
+            <a
+              href="/about"
+              className="text-rg-bone/70 hover:text-rg-bone transition-colors duration-200"
+            >
+              About
+            </a>
+            <a
+              href="/contact"
+              className="text-rg-bone/70 hover:text-rg-bone transition-colors duration-200"
             >
               Contact
             </a>
@@ -24,9 +36,21 @@ export default function Footer() {
               href="https://instagram.com/runnerganglifestyle"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-rg-bone/70 hover:text-rg-bone transition-colors duration-200"
+              className="text-rg-bone/70 hover:text-rg-bone transition-colors duration-200"
             >
               Instagram
+            </a>
+            <a
+              href="/shipping"
+              className="text-rg-bone/70 hover:text-rg-bone transition-colors duration-200"
+            >
+              Shipping Policy
+            </a>
+            <a
+              href="/returns"
+              className="text-rg-bone/70 hover:text-rg-bone transition-colors duration-200"
+            >
+              Returns Policy
             </a>
           </div>
         </div>
