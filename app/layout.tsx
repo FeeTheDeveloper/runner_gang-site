@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-rg-black text-rg-bone">
         <Header />
-        <main>{children}</main>
+        <main className="pt-16 md:pt-20">{children}</main>
         <Footer />
       </body>
     </html>

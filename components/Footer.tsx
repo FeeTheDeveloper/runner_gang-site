@@ -12,25 +12,21 @@ export default function Footer() {
             Runner Gang Lifestyle © {currentYear}
           </p>
 
-          {/* Social Links Placeholders */}
-          <div className="flex justify-center gap-8">
+          {/* Contact & Social Links */}
+          <div className="flex flex-wrap justify-center gap-8">
             <a
-              href="#"
-              className="text-sm text-rg-bone hover:opacity-60 transition-opacity"
+              href="mailto:contact@runnergangls.com"
+              className="text-sm text-rg-bone/70 hover:text-rg-bone transition-colors duration-200"
+            >
+              Contact
+            </a>
+            <a
+              href="https://instagram.com/runnerganglifestyle"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-rg-bone/70 hover:text-rg-bone transition-colors duration-200"
             >
               Instagram
-            </a>
-            <a
-              href="#"
-              className="text-sm text-rg-bone hover:opacity-60 transition-opacity"
-            >
-              Twitter
-            </a>
-            <a
-              href="#"
-              className="text-sm text-rg-bone hover:opacity-60 transition-opacity"
-            >
-              Email
             </a>
           </div>
         </div>
