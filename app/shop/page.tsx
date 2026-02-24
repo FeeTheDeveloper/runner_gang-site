@@ -17,7 +17,7 @@ export default function Shop() {
               SHOP
             </h1>
             <p className="text-lg text-rg-sunset">
-              Limited drops. Controlled access.
+              Limited drops. Controlled access. No extras.
             </p>
           </div>
 

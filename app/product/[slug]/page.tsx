@@ -86,9 +86,23 @@ export default function ProductPage({ params }: ProductPageProps) {
 
               {/* CTA */}
               <div className="pt-8">
-                <button className="w-full btn-primary">
-                  Add to Cart
-                </button>
+                {product.link ? (
+                  <a
+                    href={product.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full btn-primary inline-block text-center"
+                  >
+                    BUY NOW
+                  </a>
+                ) : (
+                  <button
+                    disabled
+                    className="w-full btn-primary opacity-40 cursor-not-allowed"
+                  >
+                    COMING SOON
+                  </button>
+                )}
               </div>
 
               {/* Product Details */}

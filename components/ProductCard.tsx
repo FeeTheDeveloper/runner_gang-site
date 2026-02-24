@@ -7,13 +7,13 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <Link href={`/product/${product.slug}`}>
-      <div className="group cursor-pointer">
-        {/* Image Container with Hover Effects */}
+    <div className="group cursor-pointer">
+      {/* Image Container with Hover Effects */}
+      <Link href={`/product/${product.slug}`}>
         <div className="bg-rg-charcoal aspect-square mb-6 overflow-hidden border border-rg-charcoal group-hover:border-rg-sunset transition-all duration-300">
           <div className="w-full h-full bg-rg-charcoal flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
             {/* Placeholder for image */}
-            <span className="text-rg-mauve text-sm">{product.name}</span>
+            <span className="text-rg-mauve text-sm group-hover:opacity-70 transition-opacity">{product.name}</span>
           </div>
         </div>
 
@@ -36,7 +36,21 @@ export default function ProductCard({ product }: ProductCardProps) {
           {/* Price */}
           <p className="text-sm font-medium text-rg-bone">${product.price}</p>
         </div>
-      </div>
-    </Link>
+      </Link>
+
+      {/* Buy Now */}
+      {product.link && (
+        <div className="mt-3">
+          <a
+            href={product.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-block text-center w-full text-xs tracking-widest"
+          >
+            BUY NOW
+          </a>
+        </div>
+      )}
+    </div>
   );
 }
